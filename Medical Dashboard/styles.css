@@ -1,0 +1,120 @@
+/* styles.css
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ ... other CSS styles for layout and formatting ...
+
+.blood-pressure-chart {
+    width: 100%;
+    height: 300px;
+} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fa;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.patients {
+    list-style: none;
+}
+
+.patients .patient {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.patients .active {
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    width: 60%;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.vitals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vital {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Profile */
+.profile {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
