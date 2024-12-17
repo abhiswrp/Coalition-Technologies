@@ -32,7 +32,6 @@
 
 const ctx = document.getElementById('bloodPressureChart').getContext('2d');
 
-// Data for Chart.js
 const data = {
     labels: ['Oct 2023', 'Nov 2023', 'Dec 2023', 'Jan 2024', 'Feb 2024', 'Mar 2024'],
     datasets: [{
@@ -54,7 +53,6 @@ const data = {
     ]
 };
 
-// Config
 const config = {
     type: 'line',
     data: data,
@@ -70,5 +68,4 @@ const config = {
     }
 };
 
-// Render Chart
 const bloodPressureChart = new Chart(ctx, config);
